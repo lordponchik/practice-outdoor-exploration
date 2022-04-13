@@ -234,78 +234,119 @@
         </p>
         <button type="button" class="shop-btn">Visit shop</button>
       </section>
-      <section>
-        <p>Buyer's guides</p>
-        <h2>Navigating our offering.</h2>
-        <p>
+      <section class="buyer-guides">
+        <p class="buyer-guides-subtitle">Buyer's guides</p>
+        <h2 class="buyer-guides-title">Navigating our offering.</h2>
+        <p class="buyer-guides-text">
           Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
           urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
         </p>
-        <ul>
-          <li>
-            <img src="./images/climber.jpg" alt="Climber climbs the mountain" width="568" />
-            <p>3 climbing accessories for the climber that has everything</p>
-            <img src="./images/alex-jenna.jpg" alt="Alex Jenna" width="50" />
-            <h3>Alex Jenna</h3>
-            <p>QA</p>
-            <p>October 18, 2021</p>
+        <ul class="buyer-guides-menu">
+          <li class="buyer-guides-menu-list">
+            <img
+              class="buyer-guides-menu-img"
+              src="./images/climber.jpg"
+              alt="Climber climbs the mountain"
+              width="568"
+            />
+            <p class="buyer-guides-menu-text">
+              3 climbing accessories for the climber that has everything
+            </p>
+            <img
+              class="buyer-guides-menu-photo"
+              src="./images/alex-jenna.jpg"
+              alt="Alex Jenna"
+              width="50"
+            />
+            <h3 class="buyer-guides-menu-name">Alex Jenna</h3>
+            <p class="buyer-guides-menu-position">QA</p>
+            <p class="buyer-guides-menu-date">October 18, 2021</p>
           </li>
-          <li>
-            <img src="./images/cyclist.jpg" alt="Сyclist in the mountains" width="568" />
-            <p>Biking accessories for the beaten path</p>
-            <img src="./images/woodie-brandon.jpg" alt="Woodie Brandon" width="50" />
-            <h3>Woodie Brandon</h3>
-            <p>Product Designer</p>
-            <p>October 18, 2021</p>
+          <li class="buyer-guides-menu-list">
+            <img
+              class="buyer-guides-menu-img"
+              src="./images/cyclist.jpg"
+              alt="Сyclist in the mountains"
+              width="568"
+            />
+            <p class="buyer-guides-menu-text">Biking accessories for the beaten path</p>
+            <img
+              class="buyer-guides-menu-photo"
+              src="./images/woodie-brandon.jpg"
+              alt="Woodie Brandon"
+              width="50"
+            />
+            <h3 class="buyer-guides-menu-name">Woodie Brandon</h3>
+            <p class="buyer-guides-menu-position">Product Designer</p>
+            <p class="buyer-guides-menu-date">October 18, 2021</p>
           </li>
         </ul>
-        <a href="">Show all buyer's guides</a>
+        <a href="" class="buyer-guides-link"
+          >Show all buyer's guides
+          <svg width="19" height="10"><use href="./images/sprite.svg#icon-arrow-right"></use></svg
+        ></a>
       </section>
-      <section>
+      <section class="reading">
         <img src="./images/magazines.jpg" alt="Stack of magazines" width="576" />
-        <p>Some light reading</p>
-        <h2>Subscribe to our magazine today.</h2>
-        <p>
+        <p class="reading-subtitles">Some light reading</p>
+        <h2 class="reading-title">Subscribe to our magazine today.</h2>
+        <p class="reading-text">
           We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
           quis consectetur. Morbi neque ex, condimentum dapibus congue et.
         </p>
-        <a href="">Read more</a>
+        <a href="" class="reading-link"
+          >Read more
+          <svg width="19" height="10"><use href="./images/sprite.svg#icon-arrow-right"></use></svg
+        ></a>
       </section>
     </main>
-    <footer>
-      <a href=""
-        ><svg><use href="./images/sprite.svg#icon-logo"></use></svg>
+    <footer class="footer">
+      <a class="logo-link" href=""
+        ><svg class="logo-img"><use href="./images/sprite.svg#icon-logo"></use></svg>
       </a>
-      <h2>Links</h2>
-      <h3>Pages</h3>
-      <ul>
-        <li>Home</li>
-        <li>Shop</li>
-        <li>Categories</li>
-        <li>Buyer's guides</li>
-        <li>404</li>
-        <li>Password</li>
+      <h3 class="footer-title">Pages</h3>
+      <ul class="footer-pages">
+        <li class="footer-pages-list"><a href="" class="footer-pages-link">Home</a></li>
+        <li class="footer-pages-list"><a href="" class="footer-pages-link">Shop</a></li>
+        <li class="footer-pages-list"><a href="" class="footer-pages-link">Categories</a></li>
+        <li class="footer-pages-list"><a href="" class="footer-pages-link">Buyer's guides</a></li>
+        <li class="footer-pages-list"><a href="" class="footer-pages-link">404</a></li>
+        <li class="footer-pages-list"><a href="" class="footer-pages-link">Password</a></li>
       </ul>
-      <h3>Gear categories</h3>
-      <ul>
-        <li>Hiking Gear</li>
-        <li>Climbing Gear</li>
-        <li>Jackets</li>
-        <li>Accessories</li>
-        <li>Apparel</li>
-        <li>Headwear</li>
+      <h3 class="footer-title">Gear categories</h3>
+      <ul class="footer-categories">
+        <li class="footer-categories-list">
+          <a href="" class="footer-categories-link">Hiking Gear</a>
+        </li>
+        <li class="footer-categories-list">
+          <a href="" class="footer-categories-link">Climbing Gear</a>
+        </li>
+        <li class="footer-categories-list">
+          <a href="" class="footer-categories-link">Jackets</a>
+        </li>
+        <li class="footer-categories-list">
+          <a href="" class="footer-categories-link">Accessories</a>
+        </li>
+        <li class="footer-categories-list">
+          <a href="" class="footer-categories-link">Apparel</a>
+        </li>
+        <li class="footer-categories-list">
+          <a href="" class="footer-categories-link">Headwear</a>
+        </li>
       </ul>
-      <h3>Company</h3>
-      <ul>
-        <li>About us</li>
-        <li>Our team</li>
-        <li>Contact</li>
-        <li>Terms & Conditions</li>
-        <li>Style guide</li>
-        <li>Licenses</li>
+      <h3 class="footer-title">Company</h3>
+      <ul class="footer-company">
+        <li class="footer-company-list"><a href="" class="footer-company-link">About us</a></li>
+        <li class="footer-company-list"><a href="" class="footer-company-link">Our team</a></li>
+        <li class="footer-company-list"><a href="" class="footer-company-link">Contact</a></li>
+        <li class="footer-company-list">
+          <a href="" class="footer-company-link">Terms & Conditions</a>
+        </li>
+        <li class="footer-company-list"><a href="" class="footer-company-link">Style guide</a></li>
+        <li class="footer-company-list"><a href="" class="footer-company-link">Licenses</a></li>
       </ul>
-      <h3>Newsletter</h3>
+      <h3 class="footer-title">Newsletter</h3>
       <p>
         Subscribe to our (infrequent) newsletter where we share news about upcoming listings and
         projects.
