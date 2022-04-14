@@ -335,6 +335,9 @@ background-color: var(--white-color);
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+.buyer-guides{
+    padding-bottom: 0;
+}
 .buyer-guides-subtitle{
 font-size: 14px;
 line-height: 1.43;
@@ -355,8 +358,11 @@ font-size: 36px;
     flex-wrap: wrap;
     margin-top: -32px;
     margin-left: -32px;
+    margin-bottom: 25px;
 }
 .buyer-guides-menu-list{
+    display: flex;
+    flex-direction: column;
     width: calc(100% / 2 - 32px);
     margin-top: 32px;
     margin-left: 32px;
@@ -364,9 +370,19 @@ font-size: 36px;
 .buyer-guides-menu-img{
     margin-bottom: 20px;
 }
-.buyer-guides-menu-text{
-font-size: 20px;
-line-height: 1.2;
+.buyer-guides-menu-text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 1.2;
+}
+.buyer-guides-menu-meta{
+    display: flex;
+    align-items: center;
+}
+.buyer-guides-menu-photo{
+    margin-right: 10px;
 }
 .buyer-guides-menu-name{
 font-size: 13px;
@@ -378,6 +394,8 @@ line-height: 1.36;
 color: var(--accent-color);
 }
 .buyer-guides-menu-date{
+margin-left: auto;
+
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
@@ -386,14 +404,24 @@ line-height: 1.38;
 color: var(--secondary-text-color);
 }
 .buyer-guides-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 font-size: 15px;
 line-height: 1.4;
 color: var(--primary-text-color);
-text-decoration: none;
 }
 .buyer-guides-link:hover,
 .buyer-guides-link:focus{
     color: var(--accent-color);
+}
+.reading-container{
+    display: flex;
+    align-items: center;
+}
+.reading-img{
+    margin-right: 105px;
 }
 .reading-subtitles{
 font-size: 14px;
@@ -403,13 +431,17 @@ text-transform: uppercase;
 color: var(--accent-color);
 }
 .reading-title{
+margin-bottom: 10px;
+
 font-size: 36px;
+}
+.reading-text{
+    margin-bottom: 20px;
 }
 .reading-link{
 font-size: 15px;
 line-height: 1.4;
 color: var(--primary-text-color);
-text-decoration: none;
 }
 .reading-link:hover,
 .reading-link:focus {
@@ -418,6 +450,13 @@ text-decoration: none;
 .footer{
     background-color: var(--primary-text-color);
 }
+.footer-logo-link{
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    display: flex;
+justify-content: center;}
 .footer-title{
     font-size: 14px;
     line-height: 1.43;
