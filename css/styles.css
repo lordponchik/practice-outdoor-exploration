@@ -63,6 +63,7 @@ img{
 }
 .logo-link{
     fill: var(--primary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-link:hover,
 .logo-link:focus{
@@ -81,6 +82,8 @@ img{
     font-size: 13px;
     line-height: 1.08;    
     color: var(--nav-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-site-link:hover,
 .nav-site-link:focus{
@@ -97,6 +100,9 @@ img{
     color: var(--white-color);
     background-color: var(--primary-text-color);
     fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buy-site-btn:hover,
 .buy-site-btn:focus{
@@ -165,6 +171,8 @@ color: var(--primary-text-color);
     color: var(--primary-text-color);
     text-decoration: none;
     fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-us-link:hover,
 .about-us-link:focus{
@@ -260,6 +268,7 @@ text-align: center;
     margin-bottom: 20px;
 }
 .categories-menu-list{
+    position: relative;
     width: calc(100% / 3 - 15px);
     margin-top: 15px;
     margin-left: 15px;
@@ -267,12 +276,23 @@ text-align: center;
 .categories-menu-img{
     border-radius: 15px;
 }
+.categories-menu-meta{
+    position: absolute;
+    top: 0;
+    padding: 40px;
+
+    text-align: center;
+}
 .categories-menu-title{
+margin-bottom: 10px;
+
 font-size: 28px;
 line-height: 1.21;
 text-align: center;
 }
 .categories-menu-text{
+margin-bottom: 20px;
+
     line-height: 1.4;
     text-align: center;
 }
@@ -283,6 +303,8 @@ line-height: 1.5;
 color: var(--primary-text-color);
 text-decoration: none;
 fill: currentColor;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .categories-menu-link:hover,
 .categories-menu-link:focus{
@@ -298,16 +320,41 @@ color: var(--accent-color);
     line-height: 1.4;
     color: var(--primary-text-color);
     fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .categories-link:hover,
 .categories-link:focus{
     color: var(--accent-color);
 }
+.resting-place{
+    position: relative;
+}
 .resting-place-menu{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    display: flex;
+    padding: 16px 22px;
+    border-radius: 16px;
+
     background-color: var(--nav-text-color);
 }
 .resting-place-list{
-    list-style: none;
+    display: flex;    
+    align-items: center;
+}
+.resting-place-list:not(:last-child){
+margin-right: 20px;
+}
+.resting-place-svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: var(--white-color);
 }
 .resting-place-text{
 font-size: 12px;
@@ -351,6 +398,9 @@ line-height: 1.47;
 text-align: center;
 cursor: pointer;
 background-color: var(--white-color);
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .shop-btn:hover,
 .shop-btn:focus{
@@ -434,6 +484,8 @@ font-size: 15px;
 line-height: 1.4;
 color: var(--primary-text-color);
 fill: currentColor;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buyer-guides-link:hover,
 .buyer-guides-link:focus{
@@ -466,6 +518,8 @@ font-size: 15px;
 line-height: 1.4;
 color: var(--primary-text-color);
 fill: currentColor;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reading-link:hover,
 .reading-link:focus {
@@ -481,6 +535,8 @@ fill: currentColor;
 }
 .footer-logo-img{
     fill: var(--white-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-logo-img:hover,
 .footer-logo-img:focus {
@@ -520,6 +576,8 @@ fill: currentColor;
 font-size: 14px;
 line-height: 1.43;
 color: var(--white-color);
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-categories-link:hover,
 .footer-categories-link:focus{
@@ -533,6 +591,8 @@ font-size: 14px;
 line-height: 1.43;
 color: var(--white-color);
 text-decoration: none;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-company-link:hover,
 .footer-company-link:focus{
@@ -570,6 +630,8 @@ color: var(--white-color);
 .footer-social-menu-link{
     color: var(--white-color);
     fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-menu-link:hover,
 .footer-social-menu-link:focus {
