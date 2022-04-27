@@ -18,7 +18,8 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a href="" class="logo-link"
+          <a href="" class="logo-link" aria-label="Logo"
+            ><span class="visually-hidden">Logo</span
             ><svg class="logo-img" width="128" height="39">
               <use href="./images/sprite.svg#icon-logo"></use>
             </svg>
@@ -42,7 +43,12 @@
             <li class="buy-site-list">
               <button type="button" class="buy-site-btn">Buy template</button>
             </li>
-            <li class="buy-site-list"><button type="button" class="buy-site-btn">Cart</button></li>
+            <li class="buy-site-list">
+              <button type="button" class="buy-site-btn" aria-label="Cart">
+                <svg width="17" height="17"><use href="./images/sprite.svg#icon-cart"></use></svg>
+                Cart
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -71,8 +77,7 @@
               adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat
               eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.
             </p>
-            <a class="about-us-link" href="/"
-              >Read more
+            <a class="about-us-link" href="/">Read more
               <svg width="19" height="10">
                 <use href="./images/sprite.svg#icon-arrow-right"></use></svg
             ></a>
@@ -89,7 +94,11 @@
           </p>
           <ul class="our-promise-menu list">
             <li class="our-promise-menu-list">
-              <svg class="our-promise-menu-svg"><use></use></svg>
+              <div class="our-promise-menu-bg" aria-label="Icon sustainable materials">
+                <svg class="our-promise-menu-svg">
+                  <use href="./images/sprite.svg#icon-sustainable-materials"></use>
+                </svg>
+              </div>
               <h3 class="our-promise-menu-title">Sustainable sourcing</h3>
               <p class="our-promise-menu-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -97,7 +106,11 @@
               </p>
             </li>
             <li class="our-promise-menu-list">
-              <svg class="our-promise-menu-svg"><use></use></svg>
+              <div class="our-promise-menu-bg" aria-label="Icon lifetime warranty">
+                <svg class="our-promise-menu-svg">
+                  <use href="./images/sprite.svg#icon-lifetime-warranty"></use>
+                </svg>
+              </div>
               <h3 class="our-promise-menu-title">Lifetime warranty</h3>
               <p class="our-promise-menu-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -105,7 +118,11 @@
               </p>
             </li>
             <li class="our-promise-menu-list">
-              <svg class="our-promise-menu-svg"><use></use></svg>
+              <div class="our-promise-menu-bg" aria-label="Icon all terrain">
+                <svg class="our-promise-menu-svg">
+                  <use href="./images/sprite.svg#icon-all-terrain"></use>
+                </svg>
+              </div>
               <h3 class="our-promise-menu-title">All-terrain tested</h3>
               <p class="our-promise-menu-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -113,7 +130,11 @@
               </p>
             </li>
             <li class="our-promise-menu-list">
-              <svg class="our-promise-menu-svg"><use></use></svg>
+              <div class="our-promise-menu-bg" aria-label="Icon premium materials">
+                <svg class="our-promise-menu-svg">
+                  <use href="./images/sprite.svg#icon-premium-materials"></use>
+                </svg>
+              </div>
               <h3 class="our-promise-menu-title">Premium materials</h3>
               <p class="our-promise-menu-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -121,7 +142,11 @@
               </p>
             </li>
             <li class="our-promise-menu-list">
-              <svg class="our-promise-menu-svg"><use></use></svg>
+              <div class="our-promise-menu-bg" aria-label="Icon designed"">
+                <svg class="our-promise-menu-svg">
+                  <use href="./images/sprite.svg#icon-designed"></use>
+                </svg>     
+              </div>
               <h3 class="our-promise-menu-title">Designed by you</h3>
               <p class="our-promise-menu-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -129,7 +154,11 @@
               </p>
             </li>
             <li class="our-promise-menu-list">
-              <svg class="our-promise-menu-svg"><use></use></svg>
+              <div class="our-promise-menu-bg" aria-label="Icon quality assured">
+                <svg class="our-promise-menu-svg">
+                  <use href="./images/sprite.svg#icon-quality-assured"></use>
+                </svg>
+              </div>
               <h3 class="our-promise-menu-title">Quality assured</h3>
               <p class="our-promise-menu-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -373,105 +402,135 @@
     </main>
     <footer class="footer section">
       <div class="container">
-        <a class="footer-logo-link logo-link" href=""
-          ><svg class="logo-img" width="128" height="39" fill="white" stroke="white">
+        <a class="footer-logo-link logo-link" href="" aria-label="Logo">
+          <span class="visually-hidden">Logo</span>
+          <svg class="footer-logo-img logo-img" width="128" height="39">
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
         <div class="footer-content">
           <div class="footer-pages">
             <h3 class="footer-title">Pages</h3>
-            <ul class="footer-pages-menu">
-              <li class="footer-pages-list"><a href="" class="footer-pages-link">Home</a></li>
-              <li class="footer-pages-list"><a href="" class="footer-pages-link">Shop</a></li>
-              <li class="footer-pages-list"><a href="" class="footer-pages-link">Categories</a></li>
+            <ul class="footer-pages-menu list">
+              <li class="footer-pages-list"><a href="" class="footer-pages-link link">Home</a></li>
+              <li class="footer-pages-list"><a href="" class="footer-pages-link link">Shop</a></li>
               <li class="footer-pages-list">
-                <a href="" class="footer-pages-link">Buyer's guides</a>
+                <a href="" class="footer-pages-link link">Categories</a>
               </li>
-              <li class="footer-pages-list"><a href="" class="footer-pages-link">404</a></li>
-              <li class="footer-pages-list"><a href="" class="footer-pages-link">Password</a></li>
+              <li class="footer-pages-list">
+                <a href="" class="footer-pages-link link">Buyer's guides</a>
+              </li>
+              <li class="footer-pages-list"><a href="" class="footer-pages-link link">404</a></li>
+              <li class="footer-pages-list">
+                <a href="" class="footer-pages-link link">Password</a>
+              </li>
             </ul>
           </div>
           <div class="footer-categories">
             <h3 class="footer-title">Gear categories</h3>
-            <ul class="footer-categories-menu">
+            <ul class="footer-categories-menu list">
               <li class="footer-categories-list">
-                <a href="" class="footer-categories-link">Hiking Gear</a>
+                <a href="" class="footer-categories-link link">Hiking Gear</a>
               </li>
               <li class="footer-categories-list">
-                <a href="" class="footer-categories-link">Climbing Gear</a>
+                <a href="" class="footer-categories-link link">Climbing Gear</a>
               </li>
               <li class="footer-categories-list">
-                <a href="" class="footer-categories-link">Jackets</a>
+                <a href="" class="footer-categories-link link">Jackets</a>
               </li>
               <li class="footer-categories-list">
-                <a href="" class="footer-categories-link">Accessories</a>
+                <a href="" class="footer-categories-link link">Accessories</a>
               </li>
               <li class="footer-categories-list">
-                <a href="" class="footer-categories-link">Apparel</a>
+                <a href="" class="footer-categories-link link">Apparel</a>
               </li>
               <li class="footer-categories-list">
-                <a href="" class="footer-categories-link">Headwear</a>
+                <a href="" class="footer-categories-link link">Headwear</a>
               </li>
             </ul>
           </div>
           <div class="footer-company">
             <h3 class="footer-title">Company</h3>
-            <ul class="footer-company-menu">
+            <ul class="footer-company-menu list">
               <li class="footer-company-list">
-                <a href="" class="footer-company-link">About us</a>
+                <a href="" class="footer-company-link link">About us</a>
               </li>
               <li class="footer-company-list">
-                <a href="" class="footer-company-link">Our team</a>
+                <a href="" class="footer-company-link link">Our team</a>
               </li>
               <li class="footer-company-list">
-                <a href="" class="footer-company-link">Contact</a>
+                <a href="" class="footer-company-link link">Contact</a>
               </li>
               <li class="footer-company-list">
-                <a href="" class="footer-company-link">Terms & Conditions</a>
+                <a href="" class="footer-company-link link">Terms & Conditions</a>
               </li>
               <li class="footer-company-list">
-                <a href="" class="footer-company-link">Style guide</a>
+                <a href="" class="footer-company-link link">Style guide</a>
               </li>
               <li class="footer-company-list">
-                <a href="" class="footer-company-link">Licenses</a>
+                <a href="" class="footer-company-link link">Licenses</a>
               </li>
             </ul>
           </div>
           <div class="footer-subscribe">
             <h3 class="footer-title">Newsletter</h3>
-            <p>
+            <p class="footer-subscribe-text">
               Subscribe to our (infrequent) newsletter where we share news about upcoming listings
               and projects.
             </p>
-            <input type="text" />
-            <input type="submit" value="Submit" />
+            <form class="footer-subscribe-form">
+              <input type="email" class="footer-subscribe-form-email" placeholder="Email" />
+              <input type="submit" value="Submit" class="footer-subscribe-submit" />
+            </form>
           </div>
         </div>
-
-        <p>&copy; Outdoor Exploration, LLC. All rights reserved. Powered by Webflow.</p>
-        <ul>
-          <li>
-            <a href="" rel="noopener noreferrer" target="_blank"
-              >Linkedin-Icon<svg><use></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="" rel="noopener noreferrer" target="_blank"
-              >Facebook-Icon<svg><use></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="" rel="noopener noreferrer" target="_blank"
-              >Instagram-Icon<svg><use></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="" rel="noopener noreferrer" target="_blank"
-              >Twitter-Icon<svg><use></use></svg
-            ></a>
-          </li>
-        </ul>
+        <div class="footer-additional-information">
+          <p class="footer-copyright">
+            &copy; Outdoor Exploration, LLC. All rights reserved. Powered by Webflow.
+          </p>
+          <ul class="footer-social-menu list">
+            <li class="footer-social-menu-list">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                class="footer-social-menu-link link"
+                ><svg class="footer-social-menu-svg">
+                  <use href="./images/sprite.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+            <li class="footer-social-menu-list">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                class="footer-social-menu-link link"
+                ><svg class="footer-social-menu-svg">
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-social-menu-list">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                class="footer-social-menu-link link"
+                ><svg class="footer-social-menu-svg">
+                  <use href="./images/sprite.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer-social-menu-list">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                class="footer-social-menu-link link"
+                ><svg class="footer-social-menu-svg">
+                  <use href="./images/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

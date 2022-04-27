@@ -52,11 +52,21 @@ img{
     width: 1px;
     height: 1px;
     margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .nav{
     display: flex;
     align-items: center;
+}
+.logo-link{
+    fill: var(--primary-text-color);
+}
+.logo-link:hover,
+.logo-link:focus{
+    fill: var(--accent-color);
 }
 .nav-site-menu{
     display: flex;
@@ -86,6 +96,7 @@ img{
     cursor: pointer;
     color: var(--white-color);
     background-color: var(--primary-text-color);
+    fill: currentColor;
 }
 .buy-site-btn:hover,
 .buy-site-btn:focus{
@@ -153,6 +164,7 @@ color: var(--primary-text-color);
     line-height: 1.4;
     color: var(--primary-text-color);
     text-decoration: none;
+    fill: currentColor;
 }
 .about-us-link:hover,
 .about-us-link:focus{
@@ -191,13 +203,21 @@ text-align: center;
         text-align: center;
         padding: 45px 25px;
 }
-.our-promise-menu-svg{
-margin-bottom: 10px;
-
-    width: 64px;
+.our-promise-menu-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+width: 64px;
 height: 64px;
+
 background-color: var(--primary-text-color);
 border-radius: 50%;
+}
+.our-promise-menu-svg{
+width: 28px;
+height: 28px;
+fill: var(--white-color);
 }
 
 .our-promise-menu-title{
@@ -262,6 +282,7 @@ font-size: 14px;
 line-height: 1.5;
 color: var(--primary-text-color);
 text-decoration: none;
+fill: currentColor;
 }
 .categories-menu-link:hover,
 .categories-menu-link:focus{
@@ -276,6 +297,7 @@ color: var(--accent-color);
     font-size: 15px;
     line-height: 1.4;
     color: var(--primary-text-color);
+    fill: currentColor;
 }
 .categories-link:hover,
 .categories-link:focus{
@@ -411,6 +433,7 @@ color: var(--secondary-text-color);
 font-size: 15px;
 line-height: 1.4;
 color: var(--primary-text-color);
+fill: currentColor;
 }
 .buyer-guides-link:hover,
 .buyer-guides-link:focus{
@@ -442,6 +465,7 @@ font-size: 36px;
 font-size: 15px;
 line-height: 1.4;
 color: var(--primary-text-color);
+fill: currentColor;
 }
 .reading-link:hover,
 .reading-link:focus {
@@ -453,42 +477,56 @@ color: var(--primary-text-color);
 .footer-logo-link{
     display: flex;
     justify-content: center;
+    margin-bottom: 75px;
 }
+.footer-logo-img{
+    fill: var(--white-color);
+}
+.footer-logo-img:hover,
+.footer-logo-img:focus {
+    fill: var(--accent-color);
+} 
+
 .footer-content{
     display: flex;
-justify-content: center;}
+    justify-content: space-between;
+    margin-bottom: 30px;
+} 
 .footer-title{
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--accent-color);
 }
-.footer-pages-list{
-    list-style: none;
+.footer-pages-list:not(:last-child){
+    margin-bottom: 10px;
 }
 .footer-pages-link{
     font-size: 14px;
     line-height: 1.43;
     color: var(--white-color);
-    text-decoration: none;
 }
 .footer-pages-link:hover,
 .footer-pages-link:focus{
     color: var(--accent-color);
 }
-.footer-categories-list {
-    list-style: none;
+.footer-categories-list:not(:last-child) {
+    margin-bottom: 10px;
 }
 .footer-categories-link{
 font-size: 14px;
 line-height: 1.43;
 color: var(--white-color);
-text-decoration: none;
 }
 .footer-categories-link:hover,
 .footer-categories-link:focus{
 color: var(--accent-color);
+}
+.footer-company-list:not(:last-child){
+    margin-bottom: 10px;
 }
 .footer-company-link{
 font-size: 14px;
@@ -499,4 +537,45 @@ text-decoration: none;
 .footer-company-link:hover,
 .footer-company-link:focus{
 color: var(--accent-color);
+}
+.footer-subscribe{
+    width: 458px;
+}
+.footer-subscribe-text{
+margin-bottom: 10px;
+
+font-size: 14px;
+line-height: 1.43;
+color: var(--white-color);
+}
+.footer-subscribe-form-email{
+    width: 100%;
+}
+.footer-additional-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copyright{
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--white-color);
+}
+.footer-social-menu{
+    display: flex;
+}
+.footer-social-menu-list:not(:last-child){
+    margin-right: 20px;
+}
+.footer-social-menu-link{
+    color: var(--white-color);
+    fill: currentColor;
+}
+.footer-social-menu-link:hover,
+.footer-social-menu-link:focus {
+    color: var(--accent-color);
+}
+.footer-social-menu-svg{
+width: 24px;
+height: 24px;
 }
