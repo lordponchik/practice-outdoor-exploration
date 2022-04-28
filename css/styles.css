@@ -154,6 +154,28 @@ font-size: 17px;
 line-height: 1.47;
 color: #CACCD1;
 }
+.about-us{
+    position: relative;
+}
+.about-us::before{
+    content: '';
+    background-image: url('../images/decoration-pattern.png');
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-us::after {
+    content: '';
+    background-image: url('../images/decoration-pattern.png');
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    bottom: -4%;
+    left: 0;
+}
 .about-us-container {
     display: flex;
     align-items: center;
@@ -193,8 +215,29 @@ color: var(--primary-text-color);
     color: var(--accent-color);
 }
 .our-promise{
+    position: relative;
+z-index: -1;
     background-color: #FAFAFC;
 }
+.our-promise::before{
+content: '';
+background-image: url('../images/our-promise-top-right-decoration-pattern.png');
+width: 470px;
+height: 423px;
+position: absolute;
+top: 0;
+right: 0;
+}
+.our-promise::after {
+    content: '';
+    background-image: url('../images/our-promise-bottom-left-decoration-pattern.png');
+    width: 555px;
+    height: 435px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .our-promise-subtitle{
 font-size: 14px;
 line-height: 1.43;
@@ -374,7 +417,11 @@ line-height: 1;
 color: var(--white-color);
 }
 .shop{
+    background-image: url('../images/shop-decoration-pattern.png');
 background-color: var(--seconddary-bg-color);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 .shop-subtitle{
 font-size: 14px;
@@ -420,9 +467,6 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .shop-btn:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
-}
-.buyer-guides{
-    padding-bottom: 0;
 }
 .buyer-guides-subtitle{
 font-size: 14px;
@@ -504,6 +548,28 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .buyer-guides-link:hover,
 .buyer-guides-link:focus{
     color: var(--accent-color);
+}
+.reading{
+    position: relative;
+}
+.reading::before{
+    content: '';
+    background-image: url('../images/decoration-pattern.png');
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.reading::after {
+    content: '';
+    background-image: url('../images/decoration-pattern.png');
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    bottom: -4%;
+    left: 0;
 }
 .reading-container{
     display: flex;
