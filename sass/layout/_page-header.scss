@@ -1,0 +1,62 @@
+.page-header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-site{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 26px;
+}
+
+.nav-site__link {
+    display: block;
+    padding: 30px 14px;
+
+    font-size: 13px;
+    line-height: 1.08;
+    color: $nav-text-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+    color: $accent-color;
+    }
+}
+
+.buy-site {
+    display: flex;
+    align-items: center;
+}
+
+.buy-site__list:not(:last-child) {
+    margin-right: 20px;
+}
+
+.buy-site__btn {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 10px 18px;
+
+    line-height: 1.16;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: $white-color;
+    background-color: $primary-text-color;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+    color: $secondary-bg-color;
+    background-color: $accent-color;
+    }
+}
+
+.buy-site__icon {
+    margin-right: 10px;    
+}

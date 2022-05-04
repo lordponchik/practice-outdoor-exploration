@@ -12,40 +12,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
       <div class="container">
-        <nav class="nav">
-          <a href="" class="logo-link" aria-label="Logo"
+        <nav class="page-header__nav">
+          <a href="" class="logo" aria-label="Logo"
             ><span class="visually-hidden">Logo</span
-            ><svg class="logo-img" width="128" height="39">
+            ><svg class="logo__icon" width="128" height="39">
               <use href="./images/sprite.svg#icon-logo"></use>
             </svg>
           </a>
-          <ul class="nav-site-menu list">
-            <li class="nav-site-list">
-              <a href="#anchor-shop" class="nav-site-link link">Shop</a>
+          <ul class="nav-site list">
+            <li class="nav-site__list">
+              <a href="#anchor-shop" class="nav-site__link link">Shop</a>
             </li>
-            <li class="nav-site-list">
-              <a href="#anchor-about-us" class="nav-site-link link">About us</a>
+            <li class="nav-site__list">
+              <a href="#anchor-about-us" class="nav-site__link link">About us</a>
             </li>
-            <li class="nav-site-list"><a href="#" class="nav-site-link link">Our team</a></li>
-            <li class="nav-site-list">
-              <a href="#anchor-buyer-guides" class="nav-site-link link">Buyer's guides</a>
+            <li class="nav-site__list"><a href="#" class="nav-site__link link">Our team</a></li>
+            <li class="nav-site__list">
+              <a href="#anchor-buyer-guides" class="nav-site__link link">Buyer's guides</a>
             </li>
-            <li class="nav-site-list">
-              <a href="#anchor-categories" class="nav-site-link link">Categories</a>
+            <li class="nav-site__list">
+              <a href="#anchor-categories" class="nav-site__link link">Categories</a>
             </li>
           </ul>
-          <ul class="buy-site-menu list">
-            <li class="buy-site-list">
-              <button type="button" class="buy-site-btn" data-modal-open>Buy template</button>
+          <ul class="buy-site list">
+            <li class="buy-site__list">
+              <button type="button" class="buy-site__btn" data-modal-open>Buy template</button>
             </li>
-            <li class="buy-site-list">
-              <button type="button" class="buy-site-btn buy-site-btn-cart" aria-label="Cart" data-modal-cart-open>
-                <svg class="buy-site-btn-svg" width="17" height="17"><use href="./images/sprite.svg#icon-basket-nav"></use></svg>
+            <li class="buy-site__list">
+              <button type="button" class="buy-site__btn" aria-label="Cart" data-modal-cart-open>
+                <svg class="buy-site__icon" width="17" height="17"><use href="./images/sprite.svg#icon-basket-nav"></use></svg>
                 Cart
               </button>
             </li>
@@ -56,10 +56,10 @@
     <main class="menu">
       <section class="hero">
         <div class="container">
-          <div class="hero-container">
-            <p class="hero-subtitle">OUTDOOR EXPLORATION</p>
-            <h1 class="hero-title">Gear for when it actually matters.</h1>
-            <p class="hero-text">
+          <div class="hero__content">
+            <p class="hero__subtitle">OUTDOOR EXPLORATION</p>
+            <h1 class="hero__title">Gear for when it actually matters.</h1>
+            <p class="hero__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Suspendisse varius enim
               in eros elementum tristique.
             </p>
@@ -67,17 +67,17 @@
         </div>
       </section>
       <section id="anchor-about-us" class="about-us section">
-        <div class="about-us-container container">
-          <img class="about-us-img" src="./images/team-photo.jpg" alt="Team photo" width="576" />
-          <div class="about-us-content">
-            <p class="about-us-subtitle">Who are we?</p>
-            <h2 class="about-us-title">A bit about us.</h2>
-            <p class="about-us-text">
+        <div class="about-us__container container">
+          <img class="about-us__img" src="./images/team-photo.jpg" alt="Team photo" width="576" />
+          <div class="about-us__content">
+            <p class="about-us__subtitle">Who are we?</p>
+            <h2 class="about-us__title">A bit about us.</h2>
+            <p class="about-us__text">
               We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur
               adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat
               eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.
             </p>
-            <a class="about-us-link" href="/">Read more
+            <a class="about-us__link" href="/">Read more
               <svg width="19" height="10">
                 <use href="./images/sprite.svg#icon-arrow-right"></use></svg
             ></a>
@@ -86,81 +86,81 @@
       </section>
       <section class="our-promise section">
         <div class="container">
-          <p class="our-promise-subtitle">Our promise</p>
-          <h2 class="our-promise-title">Setting the bar for our products.</h2>
-          <p class="our-promise-text">
+          <p class="our-promise__subtitle">Our promise</p>
+          <h2 class="our-promise__title">Setting the bar for our products.</h2>
+          <p class="our-promise__text">
             Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
             urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
           </p>
-          <ul class="our-promise-menu list">
-            <li class="our-promise-menu-list">
-              <div class="our-promise-menu-bg" aria-label="Icon sustainable materials">
-                <svg class="our-promise-menu-svg">
+          <ul class="promise-menu list">
+            <li class="promise-menu__list">
+              <div class="promise-menu__bg" aria-label="Icon sustainable materials">
+                <svg class="promise-menu__icon">
                   <use href="./images/sprite.svg#icon-sustainable-materials"></use>
                 </svg>
               </div>
-              <h3 class="our-promise-menu-title">Sustainable sourcing</h3>
-              <p class="our-promise-menu-text">
+              <h3 class="promise-menu__title">Sustainable sourcing</h3>
+              <p class="promise-menu__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.
               </p>
             </li>
-            <li class="our-promise-menu-list">
-              <div class="our-promise-menu-bg" aria-label="Icon lifetime warranty">
-                <svg class="our-promise-menu-svg">
+            <li class="promise-menu__list">
+              <div class="promise-menu__bg" aria-label="Icon lifetime warranty">
+                <svg class="promise-menu__icon">
                   <use href="./images/sprite.svg#icon-lifetime-warranty"></use>
                 </svg>
               </div>
-              <h3 class="our-promise-menu-title">Lifetime warranty</h3>
-              <p class="our-promise-menu-text">
+              <h3 class="promise-menu__title">Lifetime warranty</h3>
+              <p class="promise-menu__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.
               </p>
             </li>
-            <li class="our-promise-menu-list">
-              <div class="our-promise-menu-bg" aria-label="Icon all terrain">
-                <svg class="our-promise-menu-svg">
+            <li class="promise-menu__list">
+              <div class="promise-menu__bg" aria-label="Icon all terrain">
+                <svg class="promise-menu__icon">
                   <use href="./images/sprite.svg#icon-all-terrain"></use>
                 </svg>
               </div>
-              <h3 class="our-promise-menu-title">All-terrain tested</h3>
-              <p class="our-promise-menu-text">
+              <h3 class="promise-menu__title">All-terrain tested</h3>
+              <p class="promise-menu__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.
               </p>
             </li>
-            <li class="our-promise-menu-list">
-              <div class="our-promise-menu-bg" aria-label="Icon premium materials">
-                <svg class="our-promise-menu-svg">
+            <li class="promise-menu__list">
+              <div class="promise-menu__bg" aria-label="Icon premium materials">
+                <svg class="promise-menu__icon">
                   <use href="./images/sprite.svg#icon-premium-materials"></use>
                 </svg>
               </div>
-              <h3 class="our-promise-menu-title">Premium materials</h3>
-              <p class="our-promise-menu-text">
+              <h3 class="promise-menu__title">Premium materials</h3>
+              <p class="promise-menu__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.
               </p>
             </li>
-            <li class="our-promise-menu-list">
-              <div class="our-promise-menu-bg" aria-label="Icon designed"">
-                <svg class="our-promise-menu-svg">
+            <li class="promise-menu__list">
+              <div class="promise-menu__bg" aria-label="Icon designed"">
+                <svg class="promise-menu__icon">
                   <use href="./images/sprite.svg#icon-designed"></use>
                 </svg>     
               </div>
-              <h3 class="our-promise-menu-title">Designed by you</h3>
-              <p class="our-promise-menu-text">
+              <h3 class="promise-menu__title">Designed by you</h3>
+              <p class="promise-menu__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.
               </p>
             </li>
-            <li class="our-promise-menu-list">
-              <div class="our-promise-menu-bg" aria-label="Icon quality assured">
-                <svg class="our-promise-menu-svg">
+            <li class="promise-menu__list">
+              <div class="promise-menu__bg" aria-label="Icon quality assured">
+                <svg class="promise-menu__icon">
                   <use href="./images/sprite.svg#icon-quality-assured"></use>
                 </svg>
               </div>
-              <h3 class="our-promise-menu-title">Quality assured</h3>
-              <p class="our-promise-menu-text">
+              <h3 class="promise-menu__title">Quality assured</h3>
+              <p class="promise-menu__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.
               </p>
@@ -170,111 +170,113 @@
       </section>
       <section id="anchor-categories" class="categories section">
         <div class="container">
-          <p class="categories-subtitle">Meet the family</p>
-          <h2 class="categories-title">What we have in store for you.</h2>
-          <p class="categories-text">
+          <p class="categories__subtitle">Meet the family</p>
+          <h2 class="categories__title">What we have in store for you.</h2>
+          <p class="categories__text">
             Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
             urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
           </p>
           <ul class="categories-menu list">
-            <li class="categories-menu-list">
+            <li class="categories-menu__list">
               <img
                 src="./images/store/accessories.jpg"
                 alt="Accessories. Сompass in hand"
                 width="379"
-                class="categories-menu-img"
+                class="categories-menu__bg"
               />
-              <div class="categories-menu-meta">  <h3 class="categories-menu-title">Accessories</h3>
-              <p class="categories-menu-text">Accessories you didn't know you needed.</p>
-              <a class="categories-menu-link" href=""
+              <div class="categories-menu__meta">  
+              <h3 class="categories-menu__title">Accessories</h3>
+              <p class="categories-menu__text">Accessories you didn't know you needed.</p>
+              <a class="categories-menu__link" href=""
                 >View Accessories
-                <svg width="19" height="10">
+                <svg class="categories-menu__icon">
                   <use href="./images/sprite.svg#icon-arrow-right"></use></svg
               ></a></div>
             
             </li>
-            <li class="categories-menu-list">
+            <li class="categories-menu__list">
               <img
                 src="./images/store/apparel.jpg"
                 alt="Apparel. Guy with a backpack"
                 width="379"
-                class="categories-menu-img"
+                class="categories-menu__bg"
               />
-              <div class="categories-menu-meta">   <h3 class="categories-menu-title">Apparel</h3>
-              <p class="categories-menu-text">Check out our line of non-hiking clothes.</p>
-              <a class="categories-menu-link" href=""
+              <div class="categories-menu__meta">   
+              <h3 class="categories-menu__title">Apparel</h3>
+              <p class="categories-menu__text">Check out our line of non-hiking clothes.</p>
+              <a class="categories-menu__link" href=""
                 >View Apparel
-                <svg width="19" height="10">
+                <svg class="categories-menu__icon">
                   <use href="./images/sprite.svg#icon-arrow-right"></use></svg
               ></a></div>
            
             </li>
-            <li class="categories-menu-list">
+            <li class="categories-menu__list">
               <img
                 src="./images/store/climbing-gear.jpg"
                 alt="Climbing Gear. Climbers on the mountainside"
                 width="379"
-                class="categories-menu-img"
+                class="categories-menu__bg"
               />
-              <div class="categories-menu-meta">  <h3 class="categories-menu-title">Climbing Gear</h3>
-              <p class="categories-menu-text">Climbing gear for every occasion.</p>
-              <a class="categories-menu-link" href=""
+              <div class="categories-menu__meta">  
+              <h3 class="categories-menu__title">Climbing Gear</h3>
+              <p class="categories-menu__text">Climbing gear for every occasion.</p>
+              <a class="categories-menu__link" href=""
                 >View Climbing Gear
-                <svg width="19" height="10">
+                <svg class="categories-menu__icon">
                   <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>
-            
+              ></a></div>            
             </li>
-            <li class="categories-menu-list">
+            <li class="categories-menu__list">
               <img
                 src="./images/store/headwear.jpg"
                 alt="Headwear. Girl in a hat"
                 width="379"
-                class="categories-menu-img"
+                class="categories-menu__bg"
               />
-              <div class="categories-menu-meta"> <h3 class="categories-menu-title">Headwear</h3>
-              <p class="categories-menu-text">Our beanies are so comfy you won't believe it.</p>
-              <a class="categories-menu-link" href=""
+              <div class="categories-menu__meta"> 
+                <h3 class="categories-menu__title">Headwear</h3>
+              <p class="categories-menu__text">Our beanies are so comfy you won't believe it.</p>
+              <a class="categories-menu__link" href=""
                 >View Headwear
-                <svg width="19" height="10">
+                <svg class="categories-menu__icon">
                   <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>
-             
+              ></a></div>             
             </li>
-            <li class="categories-menu-list">
+            <li class="categories-menu__list">
               <img
                 src="./images/store/hiking-gear.jpg"
                 alt="Hiking Gear. Shoe in hand"
                 width="379"
-                class="categories-menu-img"
+                class="categories-menu__bg"
               />
-              <div class="categories-menu-meta">  <h3 class="categories-menu-title">Hiking Gear</h3>
-              <p class="categories-menu-text">Desert or mountain? Doesn't matter.</p>
-              <a class="categories-menu-link" href=""
+              <div class="categories-menu__meta">  
+                <h3 class="categories-menu__title">Hiking Gear</h3>
+              <p class="categories-menu__text">Desert or mountain? Doesn't matter.</p>
+              <a class="categories-menu__link" href=""
                 >View Hiking Gear
-                <svg width="19" height="10">
+                <svg class="categories-menu__icon">
                   <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>
-            
+              ></a></div>            
             </li>
-            <li class="categories-menu-list">
+            <li class="categories-menu__list">
               <img
                 src="./images/store/jackets.jpg"
                 alt="Jackets. Girl in a red jacket on a hill"
                 width="379"
-                class="categories-menu-img"
+                class="categories-menu__bg"
               />
-              <div class="categories-menu-meta"> <h3 class="categories-menu-title">Jackets</h3>
-              <p class="categories-menu-text">Our jackets are perfect for every season.</p>
-              <a class="categories-menu-link" href=""
+              <div class="categories-menu__meta"> 
+              <h3 class="categories-menu__title">Jackets</h3>
+              <p class="categories-menu__text">Our jackets are perfect for every season.</p>
+              <a class="categories-menu__link" href=""
                 >View Jackets
-                <svg width="19" height="10">
+                <svg class="categories-menu__icon">
                   <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>
-             
+              ></a></div>             
             </li>
           </ul>
-          <a class="categories-link link" href=""
+          <a class="categories__link link" href=""
             >Show all categories
             <svg width="19" height="10">
               <use href="./images/sprite.svg#icon-arrow-right"></use></svg
@@ -288,116 +290,116 @@
           alt="Surfers on boards in Catalina, California"
           width="1440"
         />
-        <ul class="resting-place-menu list">
-          <li class="resting-place-list">
-            <svg class="resting-place-svg"><use href="./images/sprite.svg#icon-cart"></use></svg>
-            <p class="resting-place-text">First Aid Kit Banger Bottle</p>
+        <ul class="signature-block list">
+          <li class="signature-block__list">
+            <svg class="signature-block__icon"><use href="./images/sprite.svg#icon-cart"></use></svg>
+            <p class="signature-block__text">First Aid Kit Banger Bottle</p>
           </li>
-          <li class="resting-place-list">
-            <svg class="resting-place-svg"><use href="./images/sprite.svg#icon-camera"></use></svg>
-            <p class="resting-place-text">Brian Schultz</p>
+          <li class="signature-block__list">
+            <svg class="signature-block__icon"><use href="./images/sprite.svg#icon-camera"></use></svg>
+            <p class="signature-block__text">Brian Schultz</p>
           </li>
-          <li class="resting-place-list">
-            <svg class="resting-place-svg"><use href="./images/sprite.svg#icon-person"></use></svg>
-            <p class="resting-place-text">Leah Stoff</p>
+          <li class="signature-block__list">
+            <svg class="signature-block__icon"><use href="./images/sprite.svg#icon-person"></use></svg>
+            <p class="signature-block__text">Leah Stoff</p>
           </li>
-          <li class="resting-place-list">
-            <svg class="resting-place-svg"><use href="./images/sprite.svg#icon-location"></use></svg>
-            <p class="resting-place-text">Catalina, California</p>
+          <li class="signature-block__list">
+            <svg class="signature-block__icon"><use href="./images/sprite.svg#icon-location"></use></svg>
+            <p class="signature-block__text">Catalina, California</p>
           </li>
         </ul>
       </section>
       <section id="anchor-shop" class="shop section">
         <div class="container">
-          <p class="shop-subtitle">Shop</p>
-          <h2 class="shop-title">Check out our products.</h2>
-          <p class="shop-text">
+          <p class="shop__subtitle">Shop</p>
+          <h2 class="shop__title">Check out our products.</h2>
+          <p class="shop__text">
             Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
             urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
           </p>
-          <button type="button" class="shop-btn">Visit shop</button>
+          <button type="button" class="shop__btn">Visit shop</button>
         </div>
       </section>
       <section id="anchor-buyer-guides" class="buyer-guides section">
         <div class="container">
-          <p class="buyer-guides-subtitle">Buyer's guides</p>
-          <h2 class="buyer-guides-title">Navigating our offering.</h2>
-          <p class="buyer-guides-text">
+          <p class="buyer-guides__subtitle">Buyer's guides</p>
+          <h2 class="buyer-guides__title">Navigating our offering.</h2>
+          <p class="buyer-guides__text">
             Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
             urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
           </p>
-          <ul class="buyer-guides-menu list">
-            <li class="buyer-guides-menu-list">
+          <ul class="guides list">
+            <li class="guides__list">
               <img
-                class="buyer-guides-menu-img"
+                class="guides__bg"
                 src="./images/climber.jpg"
                 alt="Climber climbs the mountain"
                 width="568"
               />
-              <p class="buyer-guides-menu-text">
+              <p class="guides__text">
                 3 climbing accessories for the climber that has everything
               </p>
-              <div class="buyer-guides-menu-meta">
+              <div class="guides__meta">
                 <img
-                  class="buyer-guides-menu-photo"
+                  class="guides__photo"
                   src="./images/alex-jenna.jpg"
                   alt="Alex Jenna"
                   width="50"
                 />
-                <div class="buyer-guides-menu-author">
-                  <h3 class="buyer-guides-menu-name">Alex Jenna</h3>
-                  <p class="buyer-guides-menu-position">QA</p>
+                <div class="guides__author">
+                  <h3 class="guides__name">Alex Jenna</h3>
+                  <p class="guides__position">QA</p>
                 </div>
 
-                <p class="buyer-guides-menu-date">October 18, 2021</p>
+                <p class="guides__date">October 18, 2021</p>
               </div>
             </li>
-            <li class="buyer-guides-menu-list">
+            <li class="guides__list">
               <img
-                class="buyer-guides-menu-img"
+                class="guides__bg"
                 src="./images/cyclist.jpg"
                 alt="Сyclist in the mountains"
                 width="568"
               />
-              <p class="buyer-guides-menu-text">Biking accessories for the beaten path</p>
-              <div class="buyer-guides-menu-meta">
+              <p class="guides__text">Biking accessories for the beaten path</p>
+              <div class="guides__meta">
                 <img
-                  class="buyer-guides-menu-photo"
+                  class="guides__photo"
                   src="./images/woodie-brandon.jpg"
                   alt="Woodie Brandon"
                   width="50"
                 />
-                <div class="buyer-guides-menu-author">
-                  <h3 class="buyer-guides-menu-name">Woodie Brandon</h3>
-                  <p class="buyer-guides-menu-position">Product Designer</p>
+                <div class="guides__author">
+                  <h3 class="guides__name">Woodie Brandon</h3>
+                  <p class="guides__position">Product Designer</p>
                 </div>
-                <p class="buyer-guides-menu-date">October 18, 2021</p>
+                <p class="guides__date">October 18, 2021</p>
               </div>
             </li>
           </ul>
-          <a href="" class="buyer-guides-link link"
+          <a href="" class="buyer-guides__link link"
             >Show all buyer's guides
             <svg width="19" height="10"><use href="./images/sprite.svg#icon-arrow-right"></use></svg
           ></a>
         </div>
       </section>
       <section class="reading section">
-        <div class="reading-container container">
+        <div class="container reading__container">
           <img
             src="./images/magazines.jpg"
             alt="Stack of magazines"
             width="576"
-            class="reading-img"
+            class="reading__img"
           />
-          <div class="reading-content">
-            <p class="reading-subtitles">Some light reading</p>
-            <h2 class="reading-title">Subscribe to our magazine today.</h2>
-            <p class="reading-text">
+          <div class="reading__content">
+            <p class="reading__subtitles">Some light reading</p>
+            <h2 class="reading__title">Subscribe to our magazine today.</h2>
+            <p class="reading__text">
               We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur
               adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat
               eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.
             </p>
-            <a href="" class="reading-link link"
+            <a href="" class="reading__link link"
               >Read more
               <svg width="19" height="10">
                 <use href="./images/sprite.svg#icon-arrow-right"></use></svg
@@ -406,132 +408,132 @@
         </div>
       </section>
     </main>
-    <footer class="footer section">
+    <footer class="page-footer section">
       <div class="container">
-        <a class="footer-logo-link logo-link" href="" aria-label="Logo">
+        <a class="logo page-footer__logo" href="" aria-label="Logo">
           <span class="visually-hidden">Logo</span>
-          <svg class="footer-logo-img logo-img" width="128" height="39">
+          <svg class="logo__icon" width="128" height="39">
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <div class="footer-content">
+        <div class="page-footer__content">
           <div class="footer-pages">
-            <h3 class="footer-title">Pages</h3>
-            <ul class="footer-pages-menu list">
-              <li class="footer-pages-list"><a href="" class="footer-pages-link link">Home</a></li>
-              <li class="footer-pages-list"><a href="" class="footer-pages-link link">Shop</a></li>
-              <li class="footer-pages-list">
-                <a href="" class="footer-pages-link link">Categories</a>
+            <h3 class="page-footer-title">Pages</h3>
+            <ul class="footer-pages__menu list">
+              <li class="footer-pages__list"><a href="" class="footer-pages__link link">Home</a></li>
+              <li class="footer-pages__list"><a href="" class="footer-pages__link link">Shop</a></li>
+              <li class="footer-pages__list">
+                <a href="" class="footer-pages__link link">Categories</a>
               </li>
-              <li class="footer-pages-list">
-                <a href="" class="footer-pages-link link">Buyer's guides</a>
+              <li class="footer-pages__list">
+                <a href="" class="footer-pages__link link">Buyer's guides</a>
               </li>
-              <li class="footer-pages-list"><a href="" class="footer-pages-link link">404</a></li>
-              <li class="footer-pages-list">
-                <a href="" class="footer-pages-link link">Password</a>
+              <li class="footer-pages__list"><a href="" class="footer-pages__link link">404</a></li>
+              <li class="footer-pages__list">
+                <a href="" class="footer-pages__link link">Password</a>
               </li>
             </ul>
           </div>
           <div class="footer-categories">
-            <h3 class="footer-title">Gear categories</h3>
-            <ul class="footer-categories-menu list">
-              <li class="footer-categories-list">
-                <a href="" class="footer-categories-link link">Hiking Gear</a>
+            <h3 class="page-footer-title">Gear categories</h3>
+            <ul class="footer-categories__menu list">
+              <li class="footer-categories__list">
+                <a href="" class="footer-categories__link link">Hiking Gear</a>
               </li>
-              <li class="footer-categories-list">
-                <a href="" class="footer-categories-link link">Climbing Gear</a>
+              <li class="footer-categories__list">
+                <a href="" class="footer-categories__link link">Climbing Gear</a>
               </li>
-              <li class="footer-categories-list">
-                <a href="" class="footer-categories-link link">Jackets</a>
+              <li class="footer-categories__list">
+                <a href="" class="footer-categories__link link">Jackets</a>
               </li>
-              <li class="footer-categories-list">
-                <a href="" class="footer-categories-link link">Accessories</a>
+              <li class="footer-categories__list">
+                <a href="" class="footer-categories__link link">Accessories</a>
               </li>
-              <li class="footer-categories-list">
-                <a href="" class="footer-categories-link link">Apparel</a>
+              <li class="footer-categories__list">
+                <a href="" class="footer-categories__link link">Apparel</a>
               </li>
-              <li class="footer-categories-list">
-                <a href="" class="footer-categories-link link">Headwear</a>
+              <li class="footer-categories__list">
+                <a href="" class="footer-categories__link link">Headwear</a>
               </li>
             </ul>
           </div>
           <div class="footer-company">
-            <h3 class="footer-title">Company</h3>
-            <ul class="footer-company-menu list">
-              <li class="footer-company-list">
-                <a href="" class="footer-company-link link">About us</a>
+            <h3 class="page-footer-title">Company</h3>
+            <ul class="footer-company__menu list">
+              <li class="footer-company__list">
+                <a href="" class="footer-company__link link">About us</a>
               </li>
-              <li class="footer-company-list">
-                <a href="" class="footer-company-link link">Our team</a>
+              <li class="footer-company__list">
+                <a href="" class="footer-company__link link">Our team</a>
               </li>
-              <li class="footer-company-list">
-                <a href="" class="footer-company-link link">Contact</a>
+              <li class="footer-company__list">
+                <a href="" class="footer-company__link link">Contact</a>
               </li>
-              <li class="footer-company-list">
-                <a href="" class="footer-company-link link">Terms & Conditions</a>
+              <li class="footer-company__list">
+                <a href="" class="footer-company__link link">Terms & Conditions</a>
               </li>
-              <li class="footer-company-list">
-                <a href="" class="footer-company-link link">Style guide</a>
+              <li class="footer-company__list">
+                <a href="" class="footer-company__link link">Style guide</a>
               </li>
-              <li class="footer-company-list">
-                <a href="" class="footer-company-link link">Licenses</a>
+              <li class="footer-company__list">
+                <a href="" class="footer-company__link link">Licenses</a>
               </li>
             </ul>
           </div>
           <div class="footer-subscribe">
-            <h3 class="footer-title">Newsletter</h3>
-            <p class="footer-subscribe-text">
+            <h3 class="page-footer-title">Newsletter</h3>
+            <p class="footer-subscribe__text">
               Subscribe to our (infrequent) newsletter where we share news about upcoming listings
               and projects.
             </p>
-            <form class="footer-subscribe-form">
-              <input type="email" class="footer-subscribe-form-email" placeholder="Email" />
-              <button type="submit" class="footer-subscribe-submit">Submit</button>
+            <form class="subscribe-form">
+              <input type="email" class="subscribe-form__email" placeholder="Email" />
+              <button type="submit" class="subscribe-form__submit">Submit</button>
                           </form>
           </div>
         </div>
-        <div class="footer-additional-information">
-          <p class="footer-copyright">
+        <div class="footer-information">
+          <p class="footer-information__copyright">
             &copy; Outdoor Exploration, LLC. All rights reserved. Powered by Webflow.
           </p>
-          <ul class="footer-social-menu list">
-            <li class="footer-social-menu-list">
+          <ul class="social list">
+            <li class="social__list">
               <a
                 href=""
                 rel="noopener noreferrer"
                 target="_blank"
-                class="footer-social-menu-link link"
-                ><svg class="footer-social-menu-svg">
+                class="social__link link"
+                ><svg class="social__icon">
                   <use href="./images/sprite.svg#icon-linkedin"></use></svg
               ></a>
             </li>
-            <li class="footer-social-menu-list">
+            <li class="social__list">
               <a
                 href=""
                 rel="noopener noreferrer"
                 target="_blank"
-                class="footer-social-menu-link link"
-                ><svg class="footer-social-menu-svg">
+                class="social__link link"
+                ><svg class="social__icon">
                   <use href="./images/sprite.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="footer-social-menu-list">
+            <li class="social__list">
               <a
                 href=""
                 rel="noopener noreferrer"
                 target="_blank"
-                class="footer-social-menu-link link"
-                ><svg class="footer-social-menu-svg">
+                class="social__link link"
+                ><svg class="social__icon">
                   <use href="./images/sprite.svg#icon-instagram"></use></svg
               ></a>
             </li>
-            <li class="footer-social-menu-list">
+            <li class="social__list">
               <a
                 href=""
                 rel="noopener noreferrer"
                 target="_blank"
-                class="footer-social-menu-link link"
-                ><svg class="footer-social-menu-svg">
+                class="social__link link"
+                ><svg class="social__icon">
                   <use href="./images/sprite.svg#icon-twitter"></use></svg
               ></a>
             </li>
@@ -541,13 +543,13 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>X</button>
+        <button type="button" class="modal__close-btn" data-modal-close>X</button>
      Buy template
       </div>
     </div>
      <div class="backdrop is-hidden" data-modal-cart>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-cart-close>X</button>
+        <button type="button" class="modal__close-btn" data-modal-cart-close>X</button>
         Cart
       </div>
     </div>

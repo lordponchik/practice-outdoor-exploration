@@ -1,0 +1,143 @@
+.page-footer {
+    background-color: $primary-text-color;
+}
+
+.page-footer__logo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 75px;
+    width: 128px;
+
+    fill: $white-color;
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.page-footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.page-footer-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.footer-pages__list:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-pages__link {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.footer-categories__list:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-categories__link {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer-company__list:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-company__link {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer-subscribe {
+    width: 458px;
+}
+
+.footer-subscribe__text {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white-color;
+}
+
+.subscribe-form {
+    position: relative;
+}
+
+.subscribe-form__email {
+    width: 100%;
+    padding: 15px 20px;
+    
+    border-radius: 8px;
+    border-style: none;
+}
+
+.subscribe-form__submit {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translate(0, -50%);
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border-style: none;
+    background-color: $primary-text-color;
+    color: $white-color;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+    color: $secondary-bg-color;
+    background-color: $accent-color;
+    }
+}
+
+.footer-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-information__copyright {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white-color;
+}

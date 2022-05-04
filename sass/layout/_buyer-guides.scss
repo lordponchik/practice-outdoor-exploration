@@ -1,0 +1,95 @@
+.buyer-guides__subtitle {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.buyer-guides__title {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+.buyer-guides__text {
+    margin-bottom: 20px;
+}
+
+.guides {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -32px;
+    margin-left: -32px;
+    margin-bottom: 25px;
+}
+
+.guides__list {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 2) - 32px);
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.guides__bg {
+    margin-bottom: 20px;
+}
+
+.guides__text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.guides__meta {
+    display: flex;
+    align-items: center;
+}
+
+.guides__photo {
+    margin-right: 10px;
+}
+
+.guides__name {
+    font-size: 13px;
+    line-height: 1.38;
+}
+
+.guides__position {
+    font-size: 11px;
+    line-height: 1.36;
+    color: $accent-color;
+}
+
+.guides__date {
+    margin-left: auto;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.38;
+    color: $secondary-text-color;
+}
+
+.buyer-guides__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    line-height: 1.4;
+    color: $primary-text-color;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+

@@ -1,0 +1,68 @@
+.reading {
+    position: relative;
+
+    &::before{
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        content: '';
+        transform: translate(-50%, -50%);
+
+        width: 256px;
+        height: 256px;
+
+        background-image: url('../images/decoration-pattern.png');   
+        }
+    &::after{
+        position: absolute;
+        bottom: -4%;
+        left: 0;
+        content: '';
+
+        width: 256px;
+        height: 256px;
+
+        background-image: url('../images/decoration-pattern.png');
+        }
+}
+.reading__container {
+    display: flex;
+    align-items: center;
+}
+
+.reading__img {
+    margin-right: 105px;
+}
+
+.reading__subtitles {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.reading__title {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+.reading__text {
+    margin-bottom: 20px;
+}
+
+.reading__link {
+    font-size: 15px;
+    line-height: 1.4;
+    color: $primary-text-color;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    }
+}
+

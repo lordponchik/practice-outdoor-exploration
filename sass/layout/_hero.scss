@@ -1,0 +1,36 @@
+.hero {
+    max-width: 100%;
+    padding-top: 218px;
+    padding-bottom: 227px;
+
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__content {
+    max-width: 600px;
+}
+
+.hero__subtitle {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.hero__title {
+    margin-bottom: 10px;
+
+    font-size: 48px;
+    line-height: 1.21;
+    color: $white-color;
+}
+
+.hero__text {
+    font-size: 17px;
+    line-height: 1.47;
+    color: $optional-text-color;
+}

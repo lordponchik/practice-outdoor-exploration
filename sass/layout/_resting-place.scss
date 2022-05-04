@@ -1,0 +1,38 @@
+.resting-place {
+    position: relative;
+}
+
+.signature-block {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    display: flex;
+    padding: 16px 22px;
+    border-radius: 16px;
+
+    background-color: $nav-text-color;
+}
+
+.signature-block__list {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
+
+.signature-block__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: $white-color;
+}
+
+.signature-block__text {
+    font-size: 12px;
+    line-height: 1;
+    color: $white-color;
+}
