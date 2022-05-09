@@ -3,15 +3,50 @@
     padding-top: 218px;
     padding-bottom: 227px;
 
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/hero/hero-bg-480.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/hero/hero-bg-480@2x.jpg);
+    }
+
+    @media screen and (min-width: 480px){
+        background-image: url(../images/hero/hero-bg-768.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+            background-image: url(../images/hero/hero-bg-768@2x.jpg);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/hero/hero-bg-1100.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/hero/hero-bg-1100@2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1100px) {
+        background-image: url(../images/hero/hero-bg-1440.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/hero/hero-bg-1440@2x.jpg);
+        }
+    }
+    
 }
 
-.hero__content {
-    max-width: 600px;
-}
+.hero__content {  
+        max-width: 600px;         
+    }
 
 .hero__subtitle {
     font-size: 14px;
@@ -19,18 +54,35 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $accent-color;
+
+    @media screen and (max-width: 767px) {
+        text-shadow: 1px 1px 2px #000;
+    }    
 }
 
 .hero__title {
     margin-bottom: 10px;
 
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.21;
     color: $white-color;
+    @media screen and (max-width: 767px) {
+        text-shadow: 1px 1px 2px #000;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
 }
 
 .hero__text {
     font-size: 17px;
-    line-height: 1.47;
-    color: $optional-text-color;
+    line-height: 1.47;     
+    color: $white-color;
+
+    @media screen and (max-width: 767px) {
+        text-shadow: 1px 1px 2px #000;
+    }
+    @media screen and (min-width: 768px) {
+        color: $optional-text-color;
+    }
 }

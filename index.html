@@ -45,7 +45,9 @@
             </li>
             <li class="buy-site__list">
               <button type="button" class="buy-site__btn" aria-label="Cart" data-modal-cart-open>
-                <svg class="buy-site__icon" width="17" height="17"><use href="./images/sprite.svg#icon-basket-nav"></use></svg>
+                <svg class="buy-site__icon" width="17" height="17">
+                  <use href="./images/sprite.svg#icon-basket-nav"></use>
+                </svg>
                 Cart
               </button>
             </li>
@@ -53,7 +55,7 @@
         </nav>
       </div>
     </header>
-    <main class="menu">
+   <main class="menu">
       <section class="hero">
         <div class="container">
           <div class="hero__content">
@@ -68,7 +70,9 @@
       </section>
       <section id="anchor-about-us" class="about-us section">
         <div class="about-us__container container">
-          <img class="about-us__img" src="./images/team-photo.jpg" alt="Team photo" width="576" />
+          <img 
+          srcset="./images/team-photo.jpg 1x, ./images/team-photo@2x.jpg 2x"
+          src="./images/team-photo.jpg" class="about-us__img"  alt="Team photo" width="576" />
           <div class="about-us__content">
             <p class="about-us__subtitle">Who are we?</p>
             <h2 class="about-us__title">A bit about us.</h2>
@@ -79,12 +83,11 @@
             </p>
             <a class="about-us__link" href="/">Read more
               <svg width="19" height="10">
-                <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a>
           </div>
         </div>
       </section>
-      <section class="our-promise section">
+     <section class="our-promise section">
         <div class="container">
           <p class="our-promise__subtitle">Our promise</p>
           <h2 class="our-promise__title">Setting the bar for our products.</h2>
@@ -168,7 +171,7 @@
           </ul>
         </div>
       </section>
-      <section id="anchor-categories" class="categories section">
+        <section id="anchor-categories" class="categories section">
         <div class="container">
           <p class="categories__subtitle">Meet the family</p>
           <h2 class="categories__title">What we have in store for you.</h2>
@@ -179,6 +182,7 @@
           <ul class="categories-menu list">
             <li class="categories-menu__list">
               <img
+                srcset="./images/store/accessories.jpg 1x, ./images/store/accessories@2x.jpg 2x"
                 src="./images/store/accessories.jpg"
                 alt="Accessories. Сompass in hand"
                 width="379"
@@ -190,12 +194,12 @@
               <a class="categories-menu__link" href=""
                 >View Accessories
                 <svg class="categories-menu__icon">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>
+                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>
             
             </li>
             <li class="categories-menu__list">
               <img
+                srcset="./images/store/apparel.jpg 1x, ./images/store/apparel@2x.jpg 2x"
                 src="./images/store/apparel.jpg"
                 alt="Apparel. Guy with a backpack"
                 width="379"
@@ -207,12 +211,12 @@
               <a class="categories-menu__link" href=""
                 >View Apparel
                 <svg class="categories-menu__icon">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>
+                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>
            
             </li>
             <li class="categories-menu__list">
               <img
+                srcset="./images/store/climbing-gear.jpg 1x, ./images/store/climbing-gear@2x.jpg 2x"
                 src="./images/store/climbing-gear.jpg"
                 alt="Climbing Gear. Climbers on the mountainside"
                 width="379"
@@ -224,11 +228,11 @@
               <a class="categories-menu__link" href=""
                 >View Climbing Gear
                 <svg class="categories-menu__icon">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>            
+                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>            
             </li>
             <li class="categories-menu__list">
               <img
+                srcset="./images/store/headwear.jpg 1x, ./images/store/headwear@2x.jpg 2x"
                 src="./images/store/headwear.jpg"
                 alt="Headwear. Girl in a hat"
                 width="379"
@@ -240,11 +244,11 @@
               <a class="categories-menu__link" href=""
                 >View Headwear
                 <svg class="categories-menu__icon">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>             
+                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>             
             </li>
             <li class="categories-menu__list">
               <img
+                srcset="./images/store/hiking-gear.jpg 1x, ./images/store/hiking-gear@2x.jpg 2x"
                 src="./images/store/hiking-gear.jpg"
                 alt="Hiking Gear. Shoe in hand"
                 width="379"
@@ -256,11 +260,11 @@
               <a class="categories-menu__link" href=""
                 >View Hiking Gear
                 <svg class="categories-menu__icon">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>            
+                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>            
             </li>
             <li class="categories-menu__list">
               <img
+              srcset="./images/store/jackets.jpg 1x, ./images/store/jackets@2x.jpg 2x"
                 src="./images/store/jackets.jpg"
                 alt="Jackets. Girl in a red jacket on a hill"
                 width="379"
@@ -272,24 +276,34 @@
               <a class="categories-menu__link" href=""
                 >View Jackets
                 <svg class="categories-menu__icon">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-              ></a></div>             
+                  <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>             
             </li>
           </ul>
           <a class="categories__link link" href=""
             >Show all categories
             <svg width="19" height="10">
-              <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-          ></a>
+              <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a>
         </div>
       </section>
       <section class="resting-place">
         <h2 class="visually-hidden">Resting-place</h2>
-        <img
-          src="./images/california.jpg"
+        <picture>
+          <source 
+          srcset="./images/resting-place/california/california-1440.jpg 1x, ./images/resting-place/california/california-1440@2x.jpg 2x"
+          media="(min-width: 768px)"
+          />
+          <source 
+          srcset="./images/resting-place/california/california-768.jpg 1x,
+                 ./images/resting-place/california/california-768@2x.jpg 2x"
+          media="(min-width: 480px)"
+          />
+          <img
+          srcset="./images/resting-place/california/california-480.jpg 1x, ./images/resting-place/california/california-480@2x.jpg 2x"
+          src="./images/resting-place/california/california-480.jpg"
           alt="Surfers on boards in Catalina, California"
-          width="1440"
         />
+        </picture>
+        
         <ul class="signature-block list">
           <li class="signature-block__list">
             <svg class="signature-block__icon"><use href="./images/sprite.svg#icon-cart"></use></svg>
@@ -309,7 +323,7 @@
           </li>
         </ul>
       </section>
-      <section id="anchor-shop" class="shop section">
+     <section id="anchor-shop" class="shop section">
         <div class="container">
           <p class="shop__subtitle">Shop</p>
           <h2 class="shop__title">Check out our products.</h2>
@@ -320,7 +334,7 @@
           <button type="button" class="shop__btn">Visit shop</button>
         </div>
       </section>
-      <section id="anchor-buyer-guides" class="buyer-guides section">
+       <section id="anchor-buyer-guides" class="buyer-guides section">
         <div class="container">
           <p class="buyer-guides__subtitle">Buyer's guides</p>
           <h2 class="buyer-guides__title">Navigating our offering.</h2>
@@ -379,13 +393,13 @@
           </ul>
           <a href="" class="buyer-guides__link link"
             >Show all buyer's guides
-            <svg width="19" height="10"><use href="./images/sprite.svg#icon-arrow-right"></use></svg
-          ></a>
+            <svg width="19" height="10"><use href="./images/sprite.svg#icon-arrow-right"></use></svg></a>
         </div>
       </section>
       <section class="reading section">
         <div class="container reading__container">
           <img
+            srcset="./images/magazines.jpg 1x, ./images/magazines@2x.jpg 2x"
             src="./images/magazines.jpg"
             alt="Stack of magazines"
             width="576"
@@ -402,13 +416,12 @@
             <a href="" class="reading__link link"
               >Read more
               <svg width="19" height="10">
-                <use href="./images/sprite.svg#icon-arrow-right"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-arrow-right"></use></svg></a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer section">
+   <footer class="page-footer section">
       <div class="container">
         <a class="logo page-footer__logo" href="" aria-label="Logo">
           <span class="visually-hidden">Logo</span>
@@ -504,8 +517,7 @@
                 target="_blank"
                 class="social__link link"
                 ><svg class="social__icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-linkedin"></use></svg></a>
             </li>
             <li class="social__list">
               <a
@@ -514,8 +526,7 @@
                 target="_blank"
                 class="social__link link"
                 ><svg class="social__icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg></a>
             </li>
             <li class="social__list">
               <a
@@ -524,8 +535,7 @@
                 target="_blank"
                 class="social__link link"
                 ><svg class="social__icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-instagram"></use></svg></a>
             </li>
             <li class="social__list">
               <a
@@ -534,8 +544,7 @@
                 target="_blank"
                 class="social__link link"
                 ><svg class="social__icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-twitter"></use></svg></a>
             </li>
           </ul>
         </div>

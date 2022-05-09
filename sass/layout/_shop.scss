@@ -4,6 +4,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: url('../images/shop-decoration-pattern@2x.png');
+    }
 }
 
 .shop__subtitle {
@@ -24,13 +30,16 @@
     color: $accent-color;
 }
 
-.shop__text {
-    width: 50%;
+.shop__text {        
     margin: 0 auto 20px;
 
     font-size: 16px;
     text-align: center;
     color: $white-color;
+
+    @media screen and (min-width: 800px){
+        width: 50%;
+    }
 }
 
 .shop__btn {

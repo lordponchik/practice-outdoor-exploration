@@ -3,24 +3,45 @@
 }
 
 .signature-block {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
+    position: absolute;    
 
-    display: flex;
-    padding: 16px 22px;
-    border-radius: 16px;
-
-    background-color: $nav-text-color;
+    @media screen  and (max-width: 479px){
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        bottom: 40px;
+        left: 40px;
+    }
+  
+    @media screen and (min-width: 768px){
+        right: 40px;
+        bottom: 40px;
+        
+        display: flex;
+        padding: 16px 22px;
+        border-radius: 16px;
+        
+        background-color: $nav-text-color;
+    }
+    
 }
 
 .signature-block__list {
     display: flex;
     align-items: center;
 
-    &:not(:last-child){
-        margin-right: 20px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
     }
+    @media screen and (min-width: 768px){
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }    
 }
 
 .signature-block__icon {
@@ -35,4 +56,8 @@
     font-size: 12px;
     line-height: 1;
     color: $white-color;
+
+    @media screen and (max-width: 767px) {
+        text-shadow: 1px 1px 2px #000;
+    }
 }

@@ -1,3 +1,8 @@
+.buyer-guides{
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
+}
 .buyer-guides__subtitle {
     font-size: 14px;
     line-height: 1.43;
@@ -17,19 +22,29 @@
 }
 
 .guides {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -32px;
-    margin-left: -32px;
     margin-bottom: 25px;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -32px;
+        margin-left: -32px;
+    }     
 }
 
 .guides__list {
-    display: flex;
-    flex-direction: column;
-    width: calc((100% / 2) - 32px);
-    margin-top: 32px;
-    margin-left: 32px;
+    @media screen and (max-width: 767px){
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        width: calc((100% / 2) - 32px);
+        margin-top: 32px;
+        margin-left: 32px;
+    }    
 }
 
 .guides__bg {
@@ -47,10 +62,11 @@
 .guides__meta {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .guides__photo {
-    margin-right: 10px;
+    margin: 0;
 }
 
 .guides__name {
@@ -65,8 +81,6 @@
 }
 
 .guides__date {
-    margin-left: auto;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
