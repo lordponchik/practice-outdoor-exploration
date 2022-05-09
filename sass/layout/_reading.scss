@@ -14,6 +14,13 @@
             height: 256px;
         
             background-image: url('../images/decoration-pattern.png');
+            background-size: contain;
+
+            @media screen and (min-device-pixel-ratio),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx){
+                background-image: url('../images/decoration-pattern@2x.png');
+            }
         }
         
         &::after {
@@ -26,6 +33,12 @@
             height: 256px;
         
             background-image: url('../images/decoration-pattern.png');
+            
+            @media screen and (min-device-pixel-ratio),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url('../images/decoration-pattern@2x.png');
+            }
         }
     }   
 }

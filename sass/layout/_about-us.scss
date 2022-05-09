@@ -4,24 +4,40 @@
     @media screen and (min-width: 768px) {
         position: relative;
         &::before {
-            content: '';
-            background-image: url('../images/decoration-pattern.png');
-            width: 256px;
-            height: 256px;
             position: absolute;
             top: 12%;
             left: 50%;
             transform: translate(-50%, -50%);
+            content: '';
+
+            width: 256px;
+            height: 256px;
+
+            background-image: url('../images/decoration-pattern.png');         
+
+            @media screen and (min-device-pixel-ratio),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url('../images/decoration-pattern@2x.png');
+            }
         }
         
         &::after {
-            content: '';
-            background-image: url('../images/decoration-pattern.png');
-            width: 256px;
-            height: 256px;
             position: absolute;
             bottom: -4%;
             left: 0;
+            content: '';
+
+            width: 256px;
+            height: 256px;
+
+            background-image: url('../images/decoration-pattern.png');
+                    
+            @media screen and (min-device-pixel-ratio),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url('../images/decoration-pattern@2x.png');
+            }
         }
     }    
 }
